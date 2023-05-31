@@ -10,12 +10,20 @@
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-<!-- jquery & iScroll -->
+<!--Gallery-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/css/6-2-1.css">
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
+
+
+
 
 <!-- wow -->
 <script src="/js/wow.min.js"></script>
@@ -27,25 +35,49 @@
 </head>
 <body>
     <header>
-        <div class="header__bg">
-            <div class="header__logo-box">
-            <p class="header__logo">〇〇工務店</p>
-            <p class="header__logo-sub">marumarukoumuten</p>
-            </div>
-            <h1 class="header__title wow fadeIn" data-wow-duration="2.5s">暮らしをつくろう</h1>
+      <div class="drawer drawer--left is-sp">
+        <div role="banner">
+              <!--ハンバーガーボタン--->
+              <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+              </button>
+              <!-- ナビゲーションの中身 -->
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                  <li><a class="drawer-menu-item" href="#">ABOUT</a></li>
+                  <li><a class="drawer-menu-item" href="#">CONCEPT</a></li>
+                  <li><a class="drawer-menu-item" href="#">GALLERY</a></li>
+                  <li><a class="drawer-menu-item" href="#">PROJECT</a></li>
+                  <li><a class="drawer-menu-item" href="#">MEMBER</a></li>
+                  <li><a class="drawer-menu-item" href="#">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
+      </div><!--drawer drawer--left is-sp-->
 
-        <div class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="">ABOUT</a></li>
-                <li class="header__nav-item"><a href="">CONCEPT</a></li>
-                <li class="header__nav-item"><a href="">GALLERY</a></li>
-                <li class="header__nav-item"><a href="">PROJECT</a></li>
-                <li class="header__nav-item"><a href="">MEMBER</a></li>
-                <li class="header__nav-item"><a href="">CONTACT</a></li>
-            </ul>
-        </div>
-    </header>
+              <div class="header__bg">
+                <div class="header__logo-box">
+                <p class="header__logo">〇〇工務店</p>
+                <p class="header__logo-sub">marumarukoumuten</p>
+                </div>
+                <h1 class="header__title wow fadeIn" data-wow-duration="2.5s">暮らしを<br class="is-sp"><span class="is-sp">&nbsp;</span>つくろう</h1>
+              </div>
+    
+            <div class="header__nav is-pc">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="">ABOUT</a></li>
+                    <li class="header__nav-item"><a href="">CONCEPT</a></li>
+                    <li class="header__nav-item"><a href="">GALLERY</a></li>
+                    <li class="header__nav-item"><a href="">PROJECT</a></li>
+                    <li class="header__nav-item"><a href="">MEMBER</a></li>
+                    <li class="header__nav-item"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+
+     </header>
+
+
 
     <div class="information">
         <div class="information__container">
@@ -58,7 +90,7 @@
                         WEBサイトリニューアルのご挨拶
                     </div>
                     <div class="information__text">
-                        ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。
+                        ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。内容が入ります。内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。
                     </div>
                     <a class="information__btn" href="/">MORE</a>
                 </div><!--information__item-->
@@ -70,7 +102,7 @@
                         タイトル入ります。
                     </div>
                     <div class="information__text">
-                        ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。
+                        ご案内の内容が入ります。ご案内の内容が入ります。内容が入ります。ご案内の内容が入ります。内容が入ります。ご案内の内容が入ります。内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。ご案内の内容が入ります。
                     </div>
                     <div class="information__btn-box"><a class="information__btn" href="/">MORE</a></div>
                 </div><!--information__item-->
@@ -79,10 +111,25 @@
     </div><!--information-->
 
 
+
       
-      <section class="side-scroll__section common__section">
+     <section class="side-scroll__section common__section">
         <div class="common__container">
-          <div class="side-scroll__itemOuter">
+
+    
+        <ul class="gallery is-sp">
+            <li><a class="gallery__img" href="img/daidokoro0-600x600.jpeg" data-lightbox="gallery1" ><img src="img/daidokoro0-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoro00-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoro00-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoro09-2-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoro09-2-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoro0_DxO-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoro0_DxO-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoro0jpg-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoro0jpg-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoro68_R-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoro68_R-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoroDSC7584_2R-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoroDSC7584_2R-600x600.jpeg" alt=""></a></li>
+            <li><a class="gallery__img" href="img/daidokoroDSC8913_2R-600x600.jpeg" data-lightbox="gallery1"><img src="img/daidokoroDSC8913_2R-600x600.jpeg" alt=""></a></li>
+          </ul>
+  
+  
+          <div class="side-scroll__itemOuter is-pc">
             <div class="side-scroll__itemInner">
 
                 <a href="#" class="side-scroll__item">
@@ -177,10 +224,21 @@
         </div>
       </section>
 
+
+      <!--<div id="container">
+        <div class="circle"></div>
+        <p class="text">FUWAYURA</p>
+    </div>-->
+
+
+
+
+
+
       <section class="concept">
         <div class="concept__box">
         <div class="concept__container">
-            <div class="concept__items-left wow fadeInLeftBig">
+            <div class="concept__items-left wow fadeInLeftBig">       
                 <div class="concept__item concept__item-1"></div>
                 <div class="concept__item concept__item-2"></div>
             </div><!--concept__items-left-->
@@ -195,7 +253,6 @@
                 <div class="concept__item concept__item-3"></div>
                 <div class="concept__item concept__item-4"></div>
             </div><!--concept__items-right-->
-        </div>
         </div>
       </section>
 
@@ -226,7 +283,7 @@
                     </div><!--category__card card-->     
                     </div>
                 </div><!--category__wrapper card-wrapper-->     
-            <div class="category__wrapper card-wrapper">
+            <div class="category__wrapper card-wrapper is-pc">
                 <div class="category__card card">
                     <div class="category__front front">
                         <a class="category__item" href="#">
@@ -261,7 +318,25 @@
                         </a>  
                     </div>
                     </div><!--category__card card-->     
-                </div><!--category__wrapper card-wrapper-->     
+                </div><!--category__wrapper card-wrapper-->   
+                <div class="category__wrapper card-wrapper is-sp">
+                    <div class="category__card card">
+                        <div class="category__front front">
+                            <a class="category__item" href="#">
+                                <img src="img/table.jpeg" alt="">
+                                <div class="category__item-name">
+                                <p class="category__item-p">TABLE</p>
+                                </div>
+                            </a>  
+                        </div>            
+                        <div class="category__back back">
+                            <a class="category__item-back" href="#">
+                                <img class="category__filter" src="img/table.jpeg" alt="">
+                                    <p class="category__back-p">TABLE</p>
+                            </a>  
+                        </div>
+                        </div><!--category__card card-->     
+                    </div><!--category__wrapper card-wrapper-->    
             <div class="category__wrapper card-wrapper">
                 <div class="category__card card">
                     <div class="category__front front">
@@ -286,6 +361,8 @@
       </section>
 
 
+
+
 <footer>
     <div class="footer__container">
         <div class="footer__main">
@@ -298,17 +375,17 @@
             <a href=""><li class="footer__nav-item">CONCEPT</li></a>
             <a href=""><li class="footer__nav-item">GALLERY</li></a>
             <a href=""><li class="footer__nav-item">PROJECT</li></a>
-            <a href=""><li class="footer__nav-item">MEMBER</li></a>      
-            <a href=""><li class="footer__nav-item">CONTACT</li></a>      
+            <a href=""><li class="footer__nav-item footer__nav-2">MEMBER</li></a>      
+            <a href=""><li class="footer__nav-item footer__nav-3">CONTACT</li></a>      
         </ul>
         <div class="footer__contact">
-            <div class="footer__logo-sub">marumarukoumuten</div>
+            <div class="footer__logo-sub is-pc">marumarukoumuten</div>
             <div class="footer__contact-telBox">
-            <p class="footer__contact-p">お電話での<br>お問い合わせ</p>
+            <p class="footer__contact-p">お電話での<br class="is-pc">お問い合わせ</p>
             <div class="footer__contact-tel">012-345-7891</div>
             </div>
             <div class="footer__contact-mailBox">
-            <p class="footer__contact-p">メールでの<br>お問い合わせ</p>
+            <p class="footer__contact-p">メールでの<br class="is-pc">お問い合わせ</p>
             <div class="footer__contact-Email"><a href="#" class="footer__contact-mail wow pulse">CONTACT<i class="fa-solid fa-caret-right fa-2xs"></i></a></div>
             </div>
         </div><!--footer__contact-->
@@ -335,7 +412,7 @@
             </div><!--footer__sub-nav-->
     
             <div class="footer__sub-icon">
-                <div class="footer__sub-fb"><i class="fa-brands fa-facebook fa-3x"></i></div>
+                <div class="footer__sub-fb"><i class="fa-brands fa-facebook fa-3x is-pc"></i><i class="fa-brands fa-square-facebook fa-3x is-sp"></i></div>
                 <div class="footer__sub-blog">BLOG</div>
             </div>
             </div><!--footer__sub-container-->
@@ -351,6 +428,18 @@
 
 
 <script src="/js/script.js"></script>
+<!--Gallery-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/js/6-2-1.js"></script>
+
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+
+
 </body>
 </html>
 
